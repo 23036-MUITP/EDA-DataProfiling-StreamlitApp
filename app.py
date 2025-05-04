@@ -2,8 +2,18 @@ import streamlit as st
 import pandas as pd
 from utils.data_utils import DataProfiler
 
+# Custom CSS for Manrope font
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+    * { font-family: 'Manrope', sans-serif; }
+    .main { background-color: #f8fafc; }
+    </style>
+""", unsafe_allow_html=True)
+
 st.set_page_config(page_title="Data Explorer", page_icon="📊", layout="wide")
 
+# Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = None
 if 'profiler' not in st.session_state:
