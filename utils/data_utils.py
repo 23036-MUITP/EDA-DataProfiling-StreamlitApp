@@ -32,3 +32,7 @@ class DataProfiler:
     def get_numeric_columns(self):
         #Returns a list of numeric column names.
         return self.df.select_dtypes(include=['int64', 'float64']).columns.tolist()
+
+    def get_categorical_columns(self):
+        """Returns a list of categorical column names."""
+        return self.df.select_dtypes(include=['object', 'category']).columns.tolist()
