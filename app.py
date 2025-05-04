@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 from utils.data_utils import DataProfiler
 
+st.set_page_config(page_title="Data Explorer", page_icon="📊", layout="wide")
+
 # Custom CSS for Manrope font
 st.markdown("""
     <style>
@@ -10,8 +12,6 @@ st.markdown("""
     .main { background-color: #f8fafc; }
     </style>
 """, unsafe_allow_html=True)
-
-st.set_page_config(page_title="Data Explorer", page_icon="📊", layout="wide")
 
 # Initialize session state
 if 'df' not in st.session_state:
