@@ -2,13 +2,16 @@ import streamlit as st
 import pandas as pd
 from utils.data_utils import DataProfiler
 
+# Set page config as the first Streamlit command
 st.set_page_config(page_title="Data Explorer", page_icon="📊", layout="wide")
 
-# Custom CSS for Manrope font
+# Custom CSS for Manrope font and light theme
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
-    * { font-family: 'Manrope', sans-serif; }
+    body, div, p, span, h1, h2, h3, h4, h5, h6, .stMarkdown, .stText, .stDataFrame, .stMetric, .stSelectbox, .stMultiselect, .stRadio, .stNumberInput, .stColorPicker {
+        font-family: 'Manrope', sans-serif !important;
+    }
     .main { background-color: #f8fafc; }
     </style>
 """, unsafe_allow_html=True)
