@@ -20,3 +20,7 @@ A Streamlit-based application for analyzing and comparing CSV datasets with inte
 ## Requirements
 - Python 3.9+
 - Dependencies: see `requirements.txt`
+
+## Documentation
+- Objective, Summary, Description of features and functionality & Instructions to run the app locally
+- Refer to summary.md
